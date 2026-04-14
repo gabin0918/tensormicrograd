@@ -1,6 +1,8 @@
-# TensorMicrograd
+## TensorMicrograd
 
-A lightweight, tensor-based autograd engine written in Python and NumPy. Inspired by Andrej Karpathy's `micrograd`, this project extends the scalar-based approach to support N-dimensional arrays (Tensors).
+This project was developed to deeply understand the mechanics of backpropagation and vectorization by extending Andrej Karpathy's micrograd to N-dimensional Tensors. By rebuilding the engine from the ground up using NumPy, I focused on scaling the scalar-based approach to efficient, vectorized operations.
+
+A lightweight, tensor-based autograd engine written in Python and NumPy. Inspired by Andrej Karpathy's `micrograd`, this project extends the original architecture to support N-dimensional arrays (Tensors), allowing for matrix-based neural network training similar to modern frameworks like PyTorch.
 
 ## Key Features
 - **Vectorized Operations**: Uses NumPy for fast matrix multiplications (`@`) and element-wise operations.
