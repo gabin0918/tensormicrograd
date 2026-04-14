@@ -1,4 +1,4 @@
-## TensorMicrograd
+# TensorMicrograd
 
 This project was developed to deeply understand the mechanics of backpropagation and vectorization by extending Andrej Karpathy's micrograd to N-dimensional Tensors. By rebuilding the engine from the ground up using NumPy, I focused on scaling the scalar-based approach to efficient, vectorized operations.
 
@@ -15,8 +15,8 @@ A lightweight, tensor-based autograd engine written in Python and NumPy. Inspire
 git clone https://github.com/gabin0918/tensormicrograd.git
 cd tensormicrograd
 pip install -e .
+```
 ## Example Usage
-
 ```python
 from tensormicrograd.engine import Tensor
 from tensormicrograd.nn import MLP
@@ -32,9 +32,9 @@ y = model(x)
 y.sum().backward() 
 
 print(f"Input gradients:\n{x.grad}")
-
+```
 ## Running Tests
 This engine is verified against PyTorch to ensure mathematical correctness of gradients and broadcasting logic.
-
 ```bash
-python -m test.test_eng
+python -m tests.test_eng
+```
