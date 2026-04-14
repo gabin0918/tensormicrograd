@@ -1,0 +1,2 @@
+numpy
+torch # for testing purposes, not a required dependency
